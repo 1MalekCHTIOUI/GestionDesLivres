@@ -12,16 +12,27 @@ using System.Windows.Forms;
 
 namespace GestionDesLivres
 {
-    public partial class AjoutForm : Form
+    public partial class LivreDetail : Form
     {
-        private Form1 parentForm;
 
 
 
-        public AjoutForm(Form1 parentForm)
+        private Livre livre;
+        public LivreDetail()
         {
             InitializeComponent();
-            this.parentForm = parentForm;
+        }
+        
+        public void getLivre(Livre livre)
+        {
+            this.livre = livre;
+            if (livre != null)
+            {
+                titreData.Text = livre.Titre;
+                auteurData.Text = livre.Auteur;
+                genreData.Text = livre.Genre;
+                dateData.Text = livre.AnneeDePublication;
+            }
 
         }
 

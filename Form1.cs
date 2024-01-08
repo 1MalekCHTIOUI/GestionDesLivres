@@ -242,9 +242,19 @@ namespace GestionDesLivres
         
         private void btnChar_Click(object sender, EventArgs e)
         {
-            /*Form1 F = new Form1();
-            AjoutForm ajoutForm = new AjoutForm(F);
-            ajoutForm.ShowDialog();*/
+            if (selectedRow != null)
+            {
+
+                string title = selectedRow.Cells["Titre"].Value.ToString();
+                string author = selectedRow.Cells["Auteur"].Value.ToString();
+                string id = selectedRow.Cells["Id"].Value.ToString();
+                string gr = selectedRow.Cells["Genre"].Value.ToString();
+                string anneePub = selectedRow.Cells["AnneeDePublication"].Value.ToString();
+                Livre lv = new Livre(title, author, gr, anneePub);
+                LivreDetail ld = new LivreDetail();
+                ld.getLivre(lv);
+                ld.Show();
+            }
         }
 
 
@@ -281,6 +291,11 @@ namespace GestionDesLivres
                 
 
             }
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
 
         }
     }

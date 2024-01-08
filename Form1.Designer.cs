@@ -42,7 +42,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.btnUpdate = new System.Windows.Forms.Button();
-            this.listView = new System.Windows.Forms.ListView();
             this._id = new System.Windows.Forms.TextBox();
             this.update2 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.BooksDataGridView)).BeginInit();
@@ -73,8 +72,9 @@
             this.textBox1.ReadOnly = true;
             this.textBox1.Size = new System.Drawing.Size(300, 33);
             this.textBox1.TabIndex = 11;
-            this.textBox1.Text = "Detail livre";
+            this.textBox1.Text = "Ajouter/Modifier Livre";
             this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // btnSupprimer
             // 
@@ -181,15 +181,6 @@
             this.btnUpdate.UseVisualStyleBackColor = true;
             this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
-            // listView
-            // 
-            this.listView.HideSelection = false;
-            this.listView.Location = new System.Drawing.Point(327, 320);
-            this.listView.Name = "listView";
-            this.listView.Size = new System.Drawing.Size(232, 97);
-            this.listView.TabIndex = 27;
-            this.listView.UseCompatibleStateImageBehavior = false;
-            // 
             // _id
             // 
             this._id.Location = new System.Drawing.Point(516, 92);
@@ -215,7 +206,6 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.update2);
             this.Controls.Add(this._id);
-            this.Controls.Add(this.listView);
             this.Controls.Add(this.btnUpdate);
             this.Controls.Add(this.btnAjouter);
             this.Controls.Add(this.datePub);
@@ -255,7 +245,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnUpdate;
-        private System.Windows.Forms.ListView listView;
         private System.Windows.Forms.TextBox _id;
         private System.Windows.Forms.Button update2;
     }

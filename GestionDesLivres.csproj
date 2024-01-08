@@ -65,11 +65,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AjoutForm.cs">
+    <Compile Include="LivreDetail.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AjoutForm.Designer.cs">
-      <DependentUpon>AjoutForm.cs</DependentUpon>
+    <Compile Include="LivreDetail.Designer.cs">
+      <DependentUpon>LivreDetail.cs</DependentUpon>
     </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -79,8 +79,8 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="AjoutForm.resx">
-      <DependentUpon>AjoutForm.cs</DependentUpon>
+    <EmbeddedResource Include="LivreDetail.resx">
+      <DependentUpon>LivreDetail.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
