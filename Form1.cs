@@ -40,13 +40,8 @@ namespace GestionDesLivres
             if (e.RowIndex >= 0)
             {
                 selectedRow = BooksDataGridView.Rows[e.RowIndex];
-            }
-        }
-        private void booksDataGridView_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
-        {
-            if (e.RowIndex >= 0)
-            {
-                selectedRow = BooksDataGridView.Rows[e.RowIndex];
+                Console.WriteLine(selectedRow);
+                Console.WriteLine("aaaa");
             }
         }
         private void button1_Click(object sender, EventArgs e)

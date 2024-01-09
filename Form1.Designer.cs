@@ -88,13 +88,16 @@
             // 
             // BooksDataGridView
             // 
+            this.BooksDataGridView.AllowUserToDeleteRows = false;
             this.BooksDataGridView.BackgroundColor = System.Drawing.Color.LightSteelBlue;
             this.BooksDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.BooksDataGridView.GridColor = System.Drawing.SystemColors.ButtonFace;
             this.BooksDataGridView.Location = new System.Drawing.Point(22, 33);
             this.BooksDataGridView.Name = "BooksDataGridView";
+            this.BooksDataGridView.ReadOnly = true;
             this.BooksDataGridView.Size = new System.Drawing.Size(250, 339);
             this.BooksDataGridView.TabIndex = 16;
+            this.BooksDataGridView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.BooksDataGridView_CellContentClick);
             this.BooksDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.BooksDataGridView_CellContentClick);
             // 
             // btnAjouter

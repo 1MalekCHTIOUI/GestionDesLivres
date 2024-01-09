@@ -17,7 +17,7 @@ namespace GestionDesLivres
 
 
 
-        private Livre livre;
+     
         public LivreDetail()
         {
             InitializeComponent();
@@ -25,7 +25,6 @@ namespace GestionDesLivres
         
         public void getLivre(Livre livre)
         {
-            this.livre = livre;
             if (livre != null)
             {
                 titreData.Text = livre.Titre;
